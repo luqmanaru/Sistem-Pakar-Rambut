@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Pakar Rambut</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to bottom, #f9fefb, #A9C46C);
+      color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+    p {
+      text-align: center;
+      color: #4CAF50;
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    .gejala-list {
+      list-style: none;
+      padding: 0;
+    }
+    .gejala-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      background: #5D8736;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+    .gejala-list label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      flex-grow: 1;
+    }
+    .gejala-list input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #F4FFC3;
+      cursor: pointer;
+    }
+    .gejala-list .number {
+      background: #4CAF50;
+      color: white;
+      font-size: 14px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+
+      background: #fff;
+      color: #5D8736;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      
+    }
+    button:hover {
+      background-color: #5D8736;
+      color: #fff;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+    }
+    .result {
+      margin-top: 20px;
+      padding: 10px;
+      background: linear-gradient(to bottom, #A9C46C, #5D8736);
+      border-radius: 5px;
+      display: none;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sistem Pakar Diagnosa Rambut</h1>
+    <p>Silakan pilih gejala yang Anda alami:</p>
+    <ul class="gejala-list"></ul>
+    <button id="diagnoseBtn">Diagnosa</button>
+    <div id="result" class="result"></div>
+    <button id="toggleDetail" class="toggle-btn" style="display: none;">Lihat Detail</button>
+    <div id="detailResult" class="detail"></div>
+    <script src="js/script2.js"></script>
+  </div>
+</body>
+</html>
